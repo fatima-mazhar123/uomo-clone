@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uomo eCommerce</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="bg-white shadow justify-between">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <div class="text-5xl font-bold">UOMO</div>
+        <nav class="hidden md:flex space-x-6 text-xl">
+            <a href="index.html" class=" hover-link active-link relative text-gray-700">Home</a>
+            <a href="shop.html" class=" hover-link relative text-gray-700">Shop</a>
+            <a href="blog.html" class=" hover-link relative text-gray-700">Blog</a>
+            <a href="pages.html" class=" hover-link relative text-gray-700">Pages</a>
+            <a href="about.html" class=" hover-link relative text-gray-700">About</a>
+            <a href="contact.html" class=" hover-link relative text-gray-700">Contact</a>
+        </nav>
+        <div class="flex items-center space-x-4 md:hidden">
+            <button id="menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 text-center">
+        <a href="index.html" class="block px-4 py-2 text-gray-700 hover-link active-link relative">Home</a>
+        <a href="shop.html" class="block px-4 py-2 text-gray-700 hover-link relative">Shop</a>
+        <a href="blog.html" class="block px-4 py-2 text-gray-700 hover-link relative">Blog</a>
+        <a href="pages.html" class="block px-4 py-2 text-gray-700 hover-link relative">Pages</a>
+        <a href="about.html" class="block px-4 py-2 text-gray-700 hover-link relative">About</a>
+        <a href="contact.html" class="block px-4 py-2 text-gray-700 hover-link relative">Contact</a>
+    </nav>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container mx-auto flex flex-col md:flex-row items-center px-6 pt-6 space-y-6 md:space-y-0 md:space-x-6 md:pt-6">
+      <div class="md:w-1/2">
+        <span class="flex items-center gap-2 text-xm"><div></div>NEW TREND</span>
+        <h1 class="text-6xl md:text-6xl ">Summer Sale Stylish <div class="font-bold">Womens</div></h1>
+        <p class="mt-4 text-sm text-gray-600 underline underline-offset-8">Discover more</p>
+      </div>
+      <div class="md:w-1/2">
+        <img src="images/hero fg.webp" alt="Summer Sale">
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Products Section -->
+  <section class="container mx-auto p-6 my-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Women Collection -->
+        <div class="relative">
+            <img src="images/women collection.jpg" alt="Women Collection" class="w-full h-auto object-cover">
+            <div class="absolute bottom-6 left-6">
+                <h2 class="text-xm font-bold text-black">HOT LIST</h2>
+                <h3 class="text-2xl font-bold text-black mt-2"><b>WOMEN</b> COLLECTION</h3>
+                <a href="#" class="text-black underline mt-2 inline-block">SHOP NOW</a>
+            </div>
+        </div>
+        <!-- Men Collection and Kids Collection -->
+        <div class="grid grid-cols-1 gap-6">
+            <!-- Men Collection -->
+            <div class="relative">
+                <img src="images/men collection.jpg" alt="Men Collection" class="w-full h-auto object-cover">
+                <div class="absolute bottom-6 left-6">
+                    <h2 class="text-xm font-bold text-black">HOT LIST</h2>
+                    <h3 class="text-2xl font-bold text-black mt-2"><b>MEN</b> COLLECTION</h3>
+                    <a href="#" class="text-black underline mt-2 inline-block">SHOP NOW</a>
+                </div>
+            </div>
+            <!-- Kids Collection and E-Gift Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Kids Collection -->
+                <div class="relative">
+                    <img src="images/child collection.jpg" alt="Kids Collection" class="w-full h-auto object-cover">
+                    <div class="absolute bottom-6 left-6">
+                        <h2 class="text-xm font-bold text-black">HOT LIST</h2>
+                        <h3 class="text-2xl font-bold text-black mt-2"><b>KIDS</b> COLLECTION</h3>
+                        <a href="#" class="text-black underline mt-2 inline-block">SHOP NOW</a>
+                    </div>
+                </div>
+                <!-- E-Gift Cards -->
+                <div class="relative bg-pink-200 p-6 flex items-center">
+                    <div>
+                        <h2 class="text-xm font-bold text-black">E-GIFT CARDS</h2>
+                        <p class="text-black mt-2">Surprise someone with the gift they really want.</p>
+                        <a href="#" class="text-black underline mt-2 inline-block">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="block mx-[6%] mt-20 mb-20">
+  <h2 class="text-3xl font-bold text-center mb-6 text-gray-900">OUR TRENDY <b>PRODUCTS</b></h2>
+  <ul class="flex justify-center space-x-4 mb-6">
+      <li class="text-gray-500 hover:text-black cursor-pointer">ALL</li>
+      <li class="text-gray-500 hover:text-black cursor-pointer">NEW ARRIVALS</li>
+      <li class="text-gray-500 hover:text-black cursor-pointer">BEST SELLER</li>
+      <li class="text-gray-500 hover:text-black cursor-pointer">TOP RATED</li>
+  </ul>
+  <div class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
+      <div class="bg-white p-4">
+          <img src="https://static.e-stradivarius.net/5/photos4/2024/I/0/1/p/1792/300/001/1792300001_1_1_1.jpg?t=1704713706405&impolicy=stradivarius-itxmediumhigh&imwidth=480&imformat=chrome&imdensity=2.625"
+              alt="Cropped Faux Leather Jacket" class="w-full h-[80%] object-cover rounded-[1px] mb-2">
+          <h3 class="text-lg font-medium mb-1">Cropped Faux Leather Jacket</h3>
+          <p class="text-gray-600 mb-2">$509</p>
+          <div class="flex items-center">
+              <svg class="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-1.519 4.674c-.3.922-1.602.922-1.902 0l-1.519-4.674a1 1 0 00-.363-1.118l3.976-2.888c.783-.57 1.17 1.24.588 1.81h-4.914a1 1 0 00-.95-.69l-1.518-4.674z" />
+              </svg>
+              <span class="text-gray-500 ml-1">4.5 stars</span>
+          </div>
+      </div>
+      <div class="bg-white p-4">
+          <img src="https://calvinklein-eu.scene7.com/is/image/CalvinKleinEU/J30J325623_BEH_main?$b2c_updp_m_mainImage_1920$"
+              alt="Calvin Shorts" class="w-full h-[80%] object-cover rounded-[1px] mb-2">
+          <h3 class="text-lg font-medium mb-1">Calvin Shorts</h3>
+          <p class="text-gray-600 mb-2">$42</p>
+          <div class="flex items-center">
+              <svg class="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-1.519 4.674c-.3.922-1.602.922-1.902 0l-1.519-4.674a1 1 0 00-.363-1.118l3.976-2.888c.783-.57 1.17 1.24.588 1.81h-4.914a1 1 0 00-.95-.69l-1.518-4.674z" />
+              </svg>
+              <span class="text-gray-500 ml-1">4.5 stars</span>
+          </div>
+      </div>
+      <div class="bg-white p-4">
+          <img src="https://i.etsystatic.com/39284344/r/il/94122d/5259439516/il_570xN.5259439516_cof3.jpg"
+              alt="Kirby T-Shirt" class="w-full h-[80%] object-cover rounded-[1px] mb-2">
+          <h3 class="text-lg font-medium mb-1">Kirby T-Shirt</h3>
+          <p class="text-gray-600 mb-2">$17</p>
+          <div class="flex items-center">
+              <svg class="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-1.519 4.674c-.3.922-1.602.922-1.902 0l-1.519-4.674a1 1 0 00-.363-1.118l3.976-2.888c.783-.57 1.17 1.24.588 1.81h-4.914a1 1 0 00-.95-.69l-1.518-4.674z" />
+              </svg>
+              <span class="text-gray-500 ml-1">4.5 stars</span>
+          </div>
+      </div>
+      <div class="bg-white p-4">
+          <img src="https://shopwildblossom.com/cdn/shop/files/1693625086127.jpg?v=1693625253&width=1445"
+              alt="Cableknit Shawl" class="w-full h-[80%] object-cover rounded-[1px] mb-2">
+          <h3 class="text-lg font-medium mb-1">Cableknit Shawl</h3>
+          <p class="text-gray-600 mb-2">$99</p>
+          <div class="flex items-center">
+              <svg class="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-1.519 4.674c-.3.922-1.602.922-1.902 0l-1.519-4.674a1 1 0 00-.363-1.118l3.976-2.888c.783-.57 1.17 1.24.588 1.81h-4.914a1 1 0 00-.95-.69l-1.518-4.674z" />
+              </svg>
+              <span class="text-gray-500 ml-1">4.5 stars</span>
+          </div>
+      </div>
+      <div class="bg-white p-4">
+          <img src="https://static3.azafashions.com/tr:w-450/uploads/product_gallery/1-0228935001684582895.jpg"
+              alt="Colorfull Jacket" class="w-full h-[80%] object-cover rounded-[1px] mb-2">
+          <h3 class="text-lg font-medium mb-1">Colorfull Jacket</h3>
+          <p class="text-gray-600 mb-2">$509</p>
+          <div class="flex items-center">
+              <svg class="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-1.519 4.674c-.3.922-1.602.922-1.902 0l-1.519-4.674a1 1 0 00-.363-1.118l3.976-2.888c.783-.57 1.17 1.24.588 1.81h-4.914a1 1 0 00-.95-.69l-1.518-4.674z" />
+              </svg>
+              <span class="text-gray-500 ml-1">4.5 stars</span>
+          </div>
+      </div>
+      <div class="bg-white p-4">
+          <img src="https://www.frenchconnection.com/cdn/shop/products/72RCO_Neutral_800x.jpg?v=1659706811"
+              alt="Shirt in Botanical Cheetah Print" class="w-full h-[80%] object-cover rounded-[1px] mb-2">
+          <h3 class="text-lg font-medium mb-1">Shirt in Botanical Cheetah Print</h3>
+          <p class="text-gray-600 mb-2">$42</p>
+          <div class="flex items-center">
+              <svg class="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-1.519 4.674c-.3.922-1.602.922-1.902 0l-1.519-4.674a1 1 0 00-.363-1.118l3.976-2.888c.783-.57 1.17 1.24.588 1.81h-4.914a1 1 0 00-.95-.69l-1.518-4.674z" />
+              </svg>
+              <span class="text-gray-500 ml-1">4.5 stars</span>
+          </div>
+      </div>
+      <div class="bg-white p-4">
+          <img src="https://www.reignboutique.com/cdn/shop/files/ax9pt0auppp89t7zinakx3m0q8g6_1800x1800.jpg?v=1713476534"
+              alt="Cotton Jersey T-Shirt" class="w-full h-[80%] object-cover rounded-[1px] mb-2">
+          <h3 class="text-lg font-medium mb-1">Cotton Jersey T-Shirt</h3>
+          <p class="text-gray-600 mb-2">$17</p>
+          <div class="flex items-center">
+              <svg class="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-1.519 4.674c-.3.922-1.602.922-1.902 0l-1.519-4.674a1 1 0 00-.363-1.118l3.976-2.888c.783-.57 1.17 1.24.588 1.81h-4.914a1 1 0 00-.95-.69l-1.518-4.674z" />
+              </svg>
+              <span class="text-gray-500 ml-1">4.5 stars</span>
+          </div>
+      </div>
+      <div class="bg-white p-4">
+          <img src="https://elessi.b-cdn.net/wp-content/uploads/2020/05/0526326060_2_3_1.jpg" alt="Zessi Dresses"
+              class="w-full h-[80%] object-cover rounded-[1px] mb-2">
+          <h3 class="text-lg font-medium mb-1">Zessi Dresses</h3>
+          <p class="text-gray-600 mb-2">$99</p>
+          <div class="flex items-center">
+              <svg class="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-1.519 4.674c-.3.922-1.602.922-1.902 0l-1.519-4.674a1 1 0 00-.363-1.118l3.976-2.888c.783-.57 1.17 1.24.588 1.81h-4.914a1 1 0 00-.95-.69l-1.518-4.674z" />
+              </svg>
+              <span class="text-gray-500 ml-1">4.5 stars</span>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="my-20">
+  <img src="https://www.orchardtaunton.co.uk/app/uploads/2020/03/OSC-Spring-Generic-2020-Website-Shopping-Banner-01.jpg"
+      alt="Spring Collection" class="h-full w-full">
+</div>
+<div class="flex mx-[7%] gap-5">
+  <div class="relative w-full h-fit">
+      <img src="https://t4.ftcdn.net/jpg/08/05/90/61/360_F_805906160_ITXCNcQTRGCZ1ie8xYbKL2IeMaNrLuWU.jpg"
+          alt="Women's T-shirt" class=" h-full w-full object-cover">
+      <div class="absolute bottom-[10%] left-[8%]">
+          <h2 class="text-white text-sm font-bold mb-4">STARTING AT $19</h2>
+          <h1 class="text-white text-lg font-bold mb-2">Women's T-Shirts</h1>
+          <a href="#" class="text-white text-xs">SHOP
+              NOW</a>
+      </div>
+  </div>
+  <div class="relative w-full h-fit">
+      <img src="https://st3.depositphotos.com/3584053/16480/i/450/depositphotos_164805480-stock-photo-manager-wearing-casual-suit-on.jpg"
+          alt="Men's Sportswear" class=" h-full w-full object-cover">
+      <div class="absolute bottom-[10%] left-[8%]">
+          <h2 class="text-black text-sm font-bold mb-4">STARTING AT $39</h2>
+          <h1 class="text-black text-lg font-bold mb-2">Men's Sportswear</h1>
+          <a href="" class="text-black text-xs">SHOP
+              NOW</a>
+      </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+  <div class="text-center text-4xl font-bold mt-20 text-gray-900">LIMITED <b>EDITION</b></div>
+  <section class="flex mt-10 mx-[7%] gap-5 justify-center mb-10">
+    <div class="w-1/2 md:w-1/4">
+        <img src="https://www.urbanmonkey.com/cdn/shop/files/no-logo-black-cap-02.jpg?v=1707736201" alt="Black cap"
+            class="w-full mx-auto">
+        <h3 class="text-gray-600 mt-4">Dresses</h3>
+        <h2 class="text-black text-xl font-bold mb-2">Hosking Blue Area Rug</h2>
+        <p class="text-gray-500">$29</p>
+        <div class="flex items-center mt-2">
+            <span class="text-xs">⭐⭐⭐⭐⭐</span>
+            <span class="ml-2 text-gray-500">8k+ reviews</span>
+        </div>
+
+    </div>
+    <div class="w-1/2 md:w-1/4">
+        <img src="https://outback.life/cdn/shop/products/4_f06ef487-c527-4ee7-a406-8bcd60d47e46.jpg?v=1628665927&width=1080"
+            alt="Black leather bag with stripes" class="w-full mx-auto">
+        <h3 class="text-gray-600 mt-4">Dresses</h3>
+        <h2 class="text-black text-xl font-bold mb-2">Hanneman Pouf</h2>
+        <p class="text-gray-500">$62</p>
+        <div class="flex items-center mt-2">
+            <span class="text-xs">⭐⭐⭐⭐⭐</span>
+            <span class="ml-2 text-gray-500">8k+ reviews</span>
+        </div>
+    </div>
+    <div class="w-1/4 hidden md:block">
+        <img src="https://sehalshop.pk/media/catalog/product/cache/caaaa4dc8d1c0719711d3435bd583438/7/8/78_1_3.jpg"
+            alt="Black leather belt" class="w-full mx-auto">
+        <h3 class="text-gray-600 mt-4">Dresses</h3>
+        <h2 class="text-black text-xl font-bold mb-2">Cushion Futon Slipcover</h2>
+        <p class="text-gray-500">$62</p>
+        <div class="flex items-center mt-2">
+            <span class="text-xs">⭐⭐⭐⭐⭐</span>
+            <span class="ml-2 text-gray-500">8k+ reviews</span>
+        </div>
+    </div>
+    <div class="w-1/4 hidden lg:block">
+        <img src="https://us.tateossian.com/cdn/shop/products/bl7725.png?v=1699273211" alt="Silver bracelet"
+            class="w-full mx-auto">
+        <h3 class="text-gray-600 mt-4">Dresses</h3>
+        <h2 class="text-black text-xl font-bold mb-2">Hub Accent Mirror</h2>
+        <p class="text-gray-500">$17</p>
+        <div class="flex items-center mt-2">
+            <span class="text-xs">⭐⭐⭐⭐⭐</span>
+            <span class="ml-2 text-gray-500">8k+ reviews</span>
+        </div>
+    </div>
+</section>
+
+  <div class="block mb-20">
+    <h1 class="text-center text-4xl font-bold text-gray-900 mt-20">@UOMO</h1>
+    <div class="grid grid-cols-3 gap-2 mt-8 mx-[7%] md:grid-cols-4 xl:grid-cols-6">
+        <div>
+            <img src="https://uomo-nextjs-ecommerce.vercel.app/_next/image?url=%2Fassets%2Fimages%2Finstagram%2Finsta1.jpg&w=256&q=75" alt="Image 1" class="w-full">
+        </div>
+        <div>
+            <img src="https://www.themodestman.com/wp-content/uploads/2019/12/brock-brown-sweater.jpg" alt="Image 2"
+                class="w-full">
+        </div>
+        <div>
+            <img src="https://imgcdn.stablediffusionweb.com/2024/5/3/31e5c668-f694-4c8d-8caa-a53ee562c520.jpg"
+                alt="Image 3" class="w-full">
+        </div>
+        <div>
+            <img src="https://img.freepik.com/premium-photo/girl-is-sitting-front-window-reading-book_783884-44776.jpg"
+                alt="Image 4" class="w-full">
+        </div>
+        <div>
+            <img src="https://uomo-nextjs-ecommerce.vercel.app/_next/image?url=%2Fassets%2Fimages%2Finstagram%2Finsta5.jpg&w=256&q=75" alt="Image 5" class="w-full">
+        </div>
+        <div>
+            <img src="https://uomo-nextjs-ecommerce.vercel.app/_next/image?url=%2Fassets%2Fimages%2Finstagram%2Finsta6.jpg&w=256&q=75" alt="Image 6" class="w-full">
+        </div>
+        <div>
+            <img src="https://uomo-nextjs-ecommerce.vercel.app/_next/image?url=%2Fassets%2Fimages%2Finstagram%2Finsta7.jpg&w=256&q=75"
+                alt="Image 7" class="w-full">
+        </div>
+        <div>
+            <img src="https://dwcdn.nz/dw-images/Freya21/757351/143860_374d7bc741b34447fa914d98afff08b3.jpg"
+                alt="Image 8" class="w-full">
+        </div>
+        <div>
+            <img src="https://capriolas.com/wp-content/uploads/2023/09/Sweater23NAV.jpg" alt="Image 9"
+                class="w-full">
+        </div>
+        <div>
+            <img src="https://image.made-in-china.com/202f0j00uqJiYoDPnvzF/Ladies-Jacket-Trench-Coat-Windproof-Jacket-for-Spring-and-Autumn.webp"
+                alt="Image 10" class="w-full">
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/736x/53/10/aa/5310aac1963a69bcff2d8af8983bb001.jpg" alt="Image 11"
+                class="w-full">
+        </div>
+        <div>
+            <img src="https://westernrise.com/cdn/shop/articles/western-rise-20220217-1881_DxO.jpg?crop=center&height=1200&v=1650559640&width=1200"
+                alt="Image 12" class="w-full">
+        </div>
+
+    </div>
+</div>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="px-[10%] py-16 bg-slate-200">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="flex items-center mb-8 md:mb-0">
+              <div class="">
+                  <img src="https://uomo-nextjs-ecommerce.vercel.app/_next/image?url=%2Fassets%2Fimages%2Flogo.png&w=128&q=75" alt="logo" class="mb-14">
+                  <p class="text-gray-600">1418 River Drive, Suite 35 Cottonhall, CA 9622 United States</p>
+                  <a href="mailto:sale@uomo.com" class="text-gray-600 hover:text-gray-800">sale@uomo.com</a>
+                  <p class="text-gray-600">+1 246-345-0695</p>
+                  <ul class="list-none flex flex-wrap mb-0">
+                    <li>
+                      <a href="https://facebook.com" class="block">
+                        <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg">
+                          <use href="#icon_facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com" class="block">
+                        <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg">
+                          <use href="#icon_twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://instagram.com" class="block">
+                        <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg">
+                          <use href="#icon_instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://youtube.com" class="block">
+                        <svg class="w-4 h-3" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M15.0117 1.8584C14.8477 1.20215 14.3281 0.682617 13.6992 0.518555C12.5234 0.19043 7.875 0.19043 7.875 0.19043C7.875 0.19043 3.19922 0.19043 2.02344 0.518555C1.39453 0.682617 0.875 1.20215 0.710938 1.8584C0.382812 3.00684 0.382812 5.46777 0.382812 5.46777C0.382812 5.46777 0.382812 7.90137 0.710938 9.07715C0.875 9.7334 1.39453 10.2256 2.02344 10.3896C3.19922 10.6904 7.875 10.6904 7.875 10.6904C7.875 10.6904 12.5234 10.6904 13.6992 10.3896C14.3281 10.2256 14.8477 9.7334 15.0117 9.07715C15.3398 7.90137 15.3398 5.46777 15.3398 5.46777C15.3398 5.46777 15.3398 3.00684 15.0117 1.8584ZM6.34375 7.68262V3.25293L10.2266 5.46777L6.34375 7.68262Z"></path>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://pinterest.com" class="block">
+                        <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg">
+                          <use href="#icon_pinterest"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  
+              </div>
+          </div>
+          <div class="flex flex-row md:flex-row justify-around md:justify-between items-center w-full md:w-auto">
+              <div class="mr-5">
+                  <h3 class="text-gray-800 font-bold mb-4">COMPANY</h3>
+                  <ul class="space-y-2">
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">About Us</a></li>
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">Careers</a></li>
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">Affiliates</a></li>
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">Blog</a></li>
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">Contact Us</a></li>
+                  </ul>
+              </div>
+  
+              <div class="mr-5">
+                  <h3 class="text-gray-800 font-bold mb-4">SHOP</h3>
+                  <ul class="space-y-2">
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">New Arrivals</a></li>
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">Accessories</a></li>
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">Men</a></li>
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">Women</a></li>
+                  </ul>
+              </div>
+  
+              <div class="mr-5 w-max">
+                  <h3 class="text-gray-800 font-bold mb-4">HELP</h3>
+                  <ul class="space-y-2">
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">Customer Service</a></li>
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">My Account</a></li>
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">Find a Store</a></li>
+                      <li><a href="" class="text-gray-600 hover:text-gray-800">Legal & Privacy</a></li>
+                  </ul>
+              </div>
+  
+  
+          </div>
+          <div class="mt-10 md:m-0">
+              <h3 class="text-gray-800 font-bold text-lg mb-4">SUBSCRIBE</h3>
+              <p class="text-gray-600">Be the first to get the latest news about trends, promotions, and much more!
+              </p>
+              <div class="flex bg-white">
+                  <input type="email" placeholder="Your email address"
+                      class="w-full px-3 py-2 border-none ">
+                  <button class="bg-white text-black border-none pr-2">Submit</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  </footer>
+
+  <script>
+    // JavaScript for toggling the mobile menu
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
